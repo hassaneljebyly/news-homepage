@@ -1,0 +1,113 @@
+:root {
+  --clr-p-900: hsl(240, 100%, 5%);
+  --clr-p-800: hsl(236, 13%, 42%);
+  --clr-p-700: hsl(233, 8%, 79%);
+  --clr-p-100: hsl(36, 100%, 99%);
+  --clr-a-200: hsl(5, 85%, 63%);
+  --clr-a-100: hsl(35, 77%, 62%);
+  --ff-p: 'Inter', sans-serif;
+}
+
+.bg-p-900 {
+  background-color: var(--clr-p-900);
+}
+
+.bg-p-800 {
+  background-color: var(--clr-p-800);
+}
+
+.bg-p-700 {
+  background-color: var(--clr-p-700);
+}
+
+.bg-p-100 {
+  background-color: var(--clr-p-100);
+}
+
+.bg-a-200 {
+  background-color: var(--clr-a-200);
+}
+
+.bg-a-100 {
+  background-color: var(--clr-a-100);
+}
+
+.text-p-900 {
+  color: var(--clr-p-900);
+}
+
+.text-p-800 {
+  color: var(--clr-p-800);
+}
+
+.text-p-700 {
+  color: var(--clr-p-700);
+}
+
+.text-p-100 {
+  color: var(--clr-p-100);
+}
+
+.text-a-200 {
+  color: var(--clr-a-200);
+}
+
+.text-a-100 {
+  color: var(--clr-a-100);
+}
+
+.ff-p {
+  font-family: var(--ff-p);
+}
+
+.page-header {
+  line-height: 1;
+}
+
+.cta-btn {
+  font-size: .75rem;
+  letter-spacing: .20rem;
+}
+
+.cta-btn:hover {
+  background-color: var(--clr-p-900);
+  color: var(--clr-p-100);
+}
+
+.new-containers {
+  border-bottom-color: var(--clr-p-800) !important;
+}
+
+
+.subtitle-side,
+.subtitle-bottom,
+.main-nav-links {
+  cursor: pointer;
+  transition: color 150ms ease;
+}
+
+.subtitle-side:hover {
+  color: var(--clr-a-100);
+}
+
+.subtitle-bottom:hover {
+  color: var(--clr-a-200);
+}
+
+
+
+.main-nav-links-hover:hover {
+  color: var(--clr-a-200);
+}
+
+button[aria-label="Close"] {
+  background-image: url('./assets/images/icon-menu-close.svg');
+  background-color: transparent;
+}
+
+.navbar-toggler {
+  background-image: url('./assets/images/icon-menu.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

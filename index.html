@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+
+  <body class="pt-5 mt-3 |ff-p text-p-900 bg-p-100">
+    <header>
+
+
+      <nav class="navbar navbar-expand-lg fixed-top border-bottom | bg-p-100">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.svg" alt="logo image on home page">
+            <span class="visually-hidden">home page logo</span>
+          </a>
+          <button class="navbar-toggler p-4  border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          </button>
+          <div class="offcanvas offcanvas-end bg-p-100" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="p-3 ms-auto border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+              </button>
+            </div>
+            <div class="offcanvas-body mt-lg-0 mt-5 bg-p-100">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-p-900 | main-nav-links-hover" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-p-900 | main-nav-links-hover" href="#">New</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-p-900 | main-nav-links-hover" href="#">Popular</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-p-900 | main-nav-links-hover" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-p-900 | main-nav-links-hover" href="#">Catagories</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row gy-3">
+          <section class="col-lg-8">
+            <div class="row g-3">
+              <div class="col-12">
+                <picture>
+                  <source media="(min-width:465px)" srcset="./assets/images/image-web-3-desktop.jpg"
+                    type="image/svg+xml">
+                  <source media="(max-width:464px)" srcset="./assets/images/image-web-3-mobile.jpg"
+                    type="image/svg+xml">
+                  <img src="./assets/images/image-web-3-desktop.jpg" class="img-fluid" alt="decorative image">
+                </picture>
+              </div>
+              <div class="col-sm-6">
+                <h1 class="display-3 fw-bold | page-header">The Bright Future of Web 3.0?</h1>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex flex-column align-items-start justify-content-evenly h-100">
+                  <p class="text-p-800">
+                    We dive into the next evolution of the web that claims to put the power of the platforms back into
+                    the
+                    hands
+                    of the
+                    people.
+                    But is it really fulfilling its promise?
+                  </p>
+                  <button class="btn rounded-0 text-uppercase px-3 py-2 | cta-btn bg-a-200 text-p-100">Read
+                    more</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="col-lg-4 p-3 | bg-p-900">
+            <div class="row g-3 h-100 align-items-md-start justify-content-between">
+              <h2 class="col-12 h2 fw-bold | text-a-100">New</h2>
+              <div class="col-sm-12 col-md-4 col-lg-12 border-bottom | new-containers">
+                <h3 class="fs-6 fw-bold | subtitle-side text-p-100">Hydrogen VS Electric Cars</h3>
+                <p class="fs-6 | text-p-700">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-12 border-bottom | new-containers">
+                <h3 class="fs-6 fw-bold | subtitle-side text-p-100">The Downsides of AI Artistry</h3>
+                <p class="fs-6 | text-p-700">
+                  What are the possible adverse effects of on-demand AI image generation?
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-12 | new-containers">
+                <h3 class="fs-6 fw-bold | subtitle-side text-p-100">Is VC Funding Drying Up?</h3>
+                <p class="fs-6 | text-p-700">
+                  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="">
+            <div class="row g-3 h-100 align-items-md-start justify-content-between">
+              <div class="col-sm-12 col-md-auto col-lg-4 d-flex align-items-center | ">
+                <div class="me-3">
+                  <img src="./assets/images/image-retro-pcs.jpg" alt="decorative image retro pcs" class="img-fluid"
+                    style="object-fit: cover; height: 125px; aspect-ratio: 2/2; min-width: 97px;">
+                </div>
+                <div>
+
+                  <span class="text-p-700 fw-bold fs-2 d-block">01</span>
+                  <h3 class="fs-5 fw-bold | subtitle-bottom">Reviving Retro PCs</h3>
+                  <p class=" | text-p-800">What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-auto col-lg-4 d-flex align-items-center | ">
+                <div class="me-3">
+                  <img src="./assets/images/image-top-laptops.jpg" alt="decorative image top laptops" class="img-fluid"
+                    style="object-fit: cover; height: 125px; aspect-ratio: 2/2; min-width: 97px;">
+                </div>
+                <div>
+                  <span class="text-p-700 fw-bold fs-2 d-block">02</span>
+                  <h3 class="fs-5 fw-bold | subtitle-bottom">Top 10 Laptops of 2022</h3>
+                  <p class=" | text-p-800">Our best picks for various needs and budgets.</p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-auto col-lg-4 d-flex align-items-center | ">
+                <div class="me-3">
+                  <img src="./assets/images/image-gaming-growth.jpg" alt="decorative image gaming growth"
+                    class="img-fluid" style="object-fit: cover; height: 125px; aspect-ratio: 2/2; min-width: 97px;">
+                </div>
+                <div>
+                  <span class="text-p-700 fw-bold fs-2 d-block">03</span>
+                  <h3 class="fs-5 fw-bold | subtitle-bottom">The Growth of Gaming</h3>
+                  <p class=" | text-p-800">How the pandemic has sparked fresh opportunities.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+
+</html>
